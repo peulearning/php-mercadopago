@@ -1,5 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
+require_once 'config.php';
 
 use MercadoPago\Client\Common\RequestOptions;
 use MercadoPago\Client\Payment\PaymentClient;
@@ -7,7 +8,7 @@ use MercadoPago\Exceptions\MPApiException;
 use MercadoPago\MercadoPagoConfig;
 
 // Configurar o Access Token
-MercadoPagoConfig::setAccessToken("TEST-8634541475521582-102107-52ee1645c047ee319a173880ca71a6e3-455358490"); // Use seu token de teste aqui
+MercadoPagoConfig::setAccessToken(MERCADOPAGO_ACCESS_TOKEN);// Use seu token de teste aqui
 MercadoPagoConfig::setRuntimeEnviroment(MercadoPagoConfig::LOCAL);
 
 // Inicializar o cliente de pagamento
@@ -37,7 +38,7 @@ try {
         echo 'Link para pagamento via Pix: ' . $payment->point_of_interaction->transaction_data->ticket_url . PHP_EOL;
         echo 'QRCode (Base64): <img src="data:image/png;base64,' . $payment->point_of_interaction->transaction_data->qr_code_base64 . '" alt="QR Code" />' . PHP_EOL;
 
-        $access_link = $payment->point_of_interaction->transaction_data->ticket_url; 
+        $access_link = $payment->point_of_interaction->transaction_data->ticket_url;
         echo 'Link de acesso ao pagamento: <a href="' . $access_link . '" target="_blank">' . $access_link . '</a>' . PHP_EOL;
 
     } else {
@@ -53,10 +54,5 @@ try {
     echo $e->getMessage();
 }
 
-
-
-
-
-#MercadoPagoConfig::setAccessToken("APP_USR-8634541475521582-102107-7afe1e50b6a1bdaa9e6589036993cb05-455358490");
 
 ?>
