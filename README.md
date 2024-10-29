@@ -38,7 +38,7 @@ makefile
 Copiar código
 MERCADO_PAGO_ACCESS_TOKEN=seu_access_token
 
-🔩 Funcionalidades
+### 🔩 Funcionalidades
 ```
 Criar Pagamento: Permite que os usuários realizem pagamentos usando a API do Mercado Pago.
 ```
@@ -49,19 +49,23 @@ Criar Preferência: Facilita a criação de preferências de pagamento para dife
 Gerenciar Transações: Possibilita o acompanhamento das transações realizadas.
 ```
 
-🛠️ Construído com
+### 🛠️ Construído com
+
 PHP - Linguagem de Programação
 Composer - Gerenciador de Dependências
 Mercado Pago SDK - Biblioteca para integração com a API do Mercado Pago
-🖇️ Colaborando
+
+### 🖇️ Colaborando
 Por favor, leia o COLABORACAO.md para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
 
-📌 Versão
+### 📌 Versão
 (0.1.0) - 28-10-2024 (Elaboração Inicial da Integração) <br> (0.2.0) - 30-10-2024 (Implementação das Funcionalidades de Pagamento) <br> (0.3.0) - 02-11-2024 (Preparação para Testes e Deploy)
 
-✒️ Autor
+### ✒️ Autor
+
 Pedro Henrique (EU) - Desenvolvedor da Integração da API do Mercado Pago
-📄 Licença
+
+###📄 Licença
 Este projeto está sob a licença (sua licença) - veja o arquivo LICENSE.md para detalhes.
 
 ⌨️ com ❤️ por Pedro Ribeiro 😊
